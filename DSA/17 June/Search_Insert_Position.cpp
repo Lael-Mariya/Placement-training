@@ -7,7 +7,7 @@ public:
         
         while(low<=high){
             int mid=(low+high)/2;
-            if (nums[mid]>=target){ //eliminating the right part of the array as this is a soreted array
+            if (nums[mid]>=target){ //eliminating the right part of the array as this is a sorted array
                 ans=mid;
                 high=mid-1;
             }
