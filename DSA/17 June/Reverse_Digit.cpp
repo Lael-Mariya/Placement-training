@@ -1,3 +1,5 @@
+// You are given an integer n. Your task is to reverse the digits, ensuring that the reversed number has no leading zeroes.
+// Time Complexity: O(log n)
 class Solution {
 public:
     int reverseDigits(int n) {
