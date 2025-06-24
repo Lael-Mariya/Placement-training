@@ -1,3 +1,4 @@
+// Time Complexity: O(N), where N=size of array+1.
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
