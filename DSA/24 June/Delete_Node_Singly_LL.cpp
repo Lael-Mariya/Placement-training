@@ -2,7 +2,7 @@ class Solution {
   public:
     Node* deleteNode(Node* head, int x) {
         if (x==1) {
-            Node*temp=head;
+            Node* temp=head;
             head=head->next;
             delete temp;
             return head;
