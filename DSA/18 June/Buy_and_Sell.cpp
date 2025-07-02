@@ -15,7 +15,7 @@ public:
     }
 };
 // Using two-pointer method, buy and sell where we run conditional statement to check if prices[sell] is greater than prices[buy] then this day is the best to sellthe stock to maximize the profit
-// or we update buy=sell
+// or we update buy=sell, the index
 class Solution {
 public:
     int maxProfit(vector<int>& prices){
