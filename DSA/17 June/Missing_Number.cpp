@@ -1,5 +1,5 @@
 // Given an integer N and an array of size N-1 containing N-1 numbers between 1 to N. Find the number(between 1 to N), that is not present in the given array.
-// Time Complexity: O(N), where N=size of array+1.
+// Time Complexity: O(n), where N=size of array+1.
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
