@@ -1,5 +1,5 @@
 // Given an array of integers arr[] and an integer target. Return indices of the two numbers such that their sum is equal to the target. Otherwise, we will return {-1, -1}.
-// Time Complexity: O(nlogn)
+// Time Complexity: O(n logn)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
