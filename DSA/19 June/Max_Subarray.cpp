@@ -1,13 +1,17 @@
-// o(n) Time Complexity, using Kadane's Algorithm
+// Maximum Subarray Sum
+// Using Kadane's Algorithm, Time Complexity: O(n), Using brute force, Time Complexity: O(n^2)
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        int max_sum=nums[0];
-        int curr_sum=nums[0]; 
-        for (int i=1; i<nums.size(); i++) {
-            curr_sum=max(nums[i], curr_sum + nums[i]);
-            max_sum=max(max_sum, curr_sum);
+        int max_sum=INT_MIN;
+        int curr_sum=0;
+       for (int i=0; i<nums.size(); i++){
+            curr_sum+=nums[i]; 
+            max_sum= max(max_sum,curr_sum);
+            if (curr_sum<0){  // if the current sum is -ve then ignore that and reset to 0
+                curr_sum=0;
+            }
         }
-        return max_sum;
+       return max_sum;
     }
 };
