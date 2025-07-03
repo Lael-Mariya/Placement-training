@@ -36,7 +36,7 @@ public:
             if (mpp.find(complement)!=mpp.end()){ // find for the complement, if present then return indices
                 return {mpp[complement],i};
             }
-            mpp[nums[i]]=i; // not found so store the num (key) with value (index), because we check if the complement is there not in the map later
+            mpp[nums[i]]=i; // not found so store the num (key) with value (index), because we will check if the complement is there not in the map later
         }
         return{};
        
