@@ -15,13 +15,11 @@ public:
     int pop(){
         int n = q.front();
         q.pop();
-        return n;
-        
+        return n;        
     }
     
     int top(){
-        return q.front();
-        
+        return q.front();       
     }
     
     bool empty(){
