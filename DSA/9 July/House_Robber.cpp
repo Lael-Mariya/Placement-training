@@ -4,7 +4,6 @@ public:
     int rob(vector<int>& nums) {
         return dfs(nums, 0);
     }
-
     int dfs(vector<int>& nums, int i) {
         if (i >= nums.size()) {
             return 0;
@@ -17,13 +16,11 @@ public:
 // Dynamic
 class Solution {
 public:
-    vector<int> memo;
-    
+    vector<int> memo;    
     int rob(vector<int>& nums) {
         memo.resize(nums.size(),-1);
         return dfs(nums,0);
     }
-
     int dfs(vector<int>& nums,int i) {
         if(i>=nums.size()) {
             return 0;
